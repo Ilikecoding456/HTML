@@ -57,6 +57,30 @@
             color: darkolivegreen;
 
         }
+        header {
+            grid-area: header;
+        }
+        nav {
+            grid-area: nav;
+        }
+        #intro {
+            grid-area: intro;
+        }
+        #bestsellers {
+            grid-area: bestsellers;
+        }
+        footer {
+            grid-area: footer;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            grid-template-areas:
+            "header header header header intro"
+            "nav nav nav nav intro"
+            "footer footer footer footer footer " ;
+        }
+        
             
         </style>
     </head>
@@ -134,11 +158,13 @@
             <source src="SampleVideo_1280x720_1mb.mp4"type="video/mp4">
         </video>
         </div>
+        <br>
         <footer>
             <span>contact us</span>ms caroline
             <p><span>phone number: 11333442+</span></p>
             <address>street akhbar,nagan</address>
         </footer>
+        <br>
         <button>enquiry</button>
     </body>
 
